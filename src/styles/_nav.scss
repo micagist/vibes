@@ -1,0 +1,31 @@
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  h1 {
+    font-family: "Lobster", cursive;
+    font-size: 3rem;
+  }
+  button {
+    background: rgb(197, 185, 238);
+    color: rgb(66, 66, 66);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    &:hover {
+      background: white;
+      color: black;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    button {
+      z-index: 10;
+    }
+  }
+}

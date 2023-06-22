@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+h1,
+h2,
+h3 {
+  color: white;
+}
+
+h3,
+h4 {
+  font-weight: 400;
+  color: rgb(211, 211, 211);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: linear-gradient(to bottom right, #6f5f98, #708cb8);
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  transition: all 0.5 ease;
+}
+
+.library-active {
+  margin-left: 30%;
+}
+
+@import "./player";
+@import "./song";
+@import "./library";
+@import "./nav";
